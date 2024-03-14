@@ -1,0 +1,38 @@
+import { useEffect, useState } from 'react';
+
+const CountdownTimer = () => {
+    const calculateTimeLeft = () => {
+        const difference = +new Date('04/05/2024') - +new Date();
+        let timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
+
+        if (difference > 0) {
+            timeLeft = {
+                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                minutes: Math.floor((difference / 1000 / 60) % 60),
+                seconds: Math.floor((difference / 1000) % 60),
+            };
+        }
+
+        return timeLeft;
+    };
+
+    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setTimeLeft(calculateTimeLeft());
+        }, 1000);
+
+        return () => clearTimeout(timer);
+    });
+
+    return (
+        <div>
+            <h1>Countdown to April 5th, 2024</h1>
+            <h2>{timeLeft.days} Days {timeLeft.hours} Hours {timeLeft.minutes} Minutes {timeLeft.seconds} Seconds</h2>
+        </div>
+    );
+};
+
+export default CountdownTimer;
