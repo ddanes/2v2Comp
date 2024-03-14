@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { Card } from '@mui/material';
+import React, { useEffect, useState } from 'react';
 
 const CountdownTimer = () => {
     const calculateTimeLeft = () => {
@@ -29,8 +30,19 @@ const CountdownTimer = () => {
 
     return (
         <div>
-            <h1>Countdown to April 5th, 2024</h1>
-            <h2>{timeLeft.days} Days {timeLeft.hours} Hours {timeLeft.minutes} Minutes {timeLeft.seconds} Seconds</h2>
+            <Card variant='outlined'> 
+            <h2 style={{
+                
+                fontSize: '2.5rem',
+                color: '#ffdb4d',
+                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+                fontFamily: 'Arial, sans-serif',
+                fontWeight: 'bold',
+                textAlign: 'center'
+            }}>
+                {timeLeft.days} Days {timeLeft.hours} Hours {timeLeft.minutes} Minutes {timeLeft.seconds} Seconds
+            </h2>
+            </Card>
         </div>
     );
 };
