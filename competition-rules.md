@@ -27,11 +27,21 @@ overall
   - [] EXTRA - Events need to get archived and then be able to list old archieved events
 - [] Allow evidence collection on a per event basis
   - [] Evidence needs to be associated with one event
+    - [] Allow for basic information to be collected on event creation.
+      - Time/Date Create (auto)
+      - Incident Time and Date
+      - Incident Information
+        - Title
+        - Description
+        - Affected Items
+        - Who is affected
   - [] Need to allow comments on events
   - [] Evidence needs to be able to be images or text
 - [] Other
   - [] Need to be able to track the length of an event
+  - [] EXTRA - Event histroy. Tracking what changes and items are made where is important.
   - [] EXTRA - If an event goes on too long an automated message needs to be sent out - depends on available free items
+  - [] EXTRA - Export/Import - Allow users to export events in PDF format
  
 
 - [] UI
@@ -51,13 +61,39 @@ overall
   - [] EXTRA - Management Page - Allows users to see the length of events and what the time it took and see overtime if the response time is increasing or decreasing
 
 
-### Minimum Required tech stack
-
 ### Rules
 
 - No more then 60% of the code can be written by either David or Tony on their applicable teams
-  - This allows for Hank and Brandon to get practice and be more involved 
+  - This allows for Hank and Brandon to get practice and be more involved
+  - This will be checked using githubs available tools
 - Code MUST be commented well. A 3rd party needs to be able to walk through it in a traditional code review setting.
+- As a gentlemens agreement try to use chat gpt as little as possible.
+  - If you are both stuck on something and it is gating you from completing something you may use it after you have exhausted other means.
+  - It will be easy to see the difference between your code and chat GPTs code.
+- The ChatGPT rule applies for code found online. While you are more than welcome to use online resources the idea is that you learn, not copy.
+- The application needs to be completed on time. (Enter time constraint here)
+  - For everyday that the application is completed late you will lose a points.
+- Each teams repositories should be private and control access using GitHubs tools. This prevents the other team from accessing the others code.
 
 ### Point System 
+
+1. **User Management**: 10 points
+2. **Incident Events Management**: 20 points
+3. **Evidence Collection**: 15 points
+4. **UI Elements**:
+   - Login Page: 5 points
+   - MFA: 5 points
+   - Home Page: 10 points
+   - Event Page: 15 points
+   - Admin Page: 10 points
+   - Archived Page: 5 points (extra)
+   - Management Page: 5 points (extra)
+5. **Code Quality**:
+   - Well-commented code: 10 points
+   - Clean code structure and organization: 10 points
+6. **Additional Requirements**:
+   - Event History: 5 points
+   - Dashboard: 10 points
+   - Export/Import: 5 points
+7. **Timeliness**: Deduct 1 point for each day late, up to a maximum of 10 points deduction.
 
