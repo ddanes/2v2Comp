@@ -93,6 +93,6 @@ overall
    - Event History: 5 points
    - Dashboard: 10 points
    - Export/Import: 5 points (Extra)
-7. **Timeliness**: Deduct 1 point for each day late, up to a maximum of 10 points deduction.
+7. **Timeline**: Deduct 5 point for each day late.
 
 
