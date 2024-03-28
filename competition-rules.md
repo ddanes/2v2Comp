@@ -39,9 +39,7 @@ overall
   - [] Evidence needs to be able to be images or text
 - [] Other
   - [] Need to be able to track the length of an event
-  - [] EXTRA - Event histroy. Tracking what changes and items are made where is important.
-  - [] EXTRA - If an event goes on too long an automated message needs to be sent out - depends on available free items
-  - [] EXTRA - Export/Import - Allow users to export events in PDF format
+  - [] EXTRA - Export - Allow users to export events in PDF format
  
 
 - [] UI
@@ -58,7 +56,7 @@ overall
     - Manage Users
     - Manage permissions
   - [] EXTRA - Archieved Page see old events and their evidence/comments
-  - [] EXTRA - Management Page - Allows users to see the length of events and what the time it took and see overtime if the response time is increasing or decreasing
+  - [] EXTRA - Management Page - Allows users to see the length of events and what the time it took and see over time if the response time is increasing or decreasing
 
 
 ### Rules
@@ -94,6 +92,7 @@ overall
 6. **Additional Requirements**:
    - Event History: 5 points
    - Dashboard: 10 points
-   - Export/Import: 5 points
+   - Export/Import: 5 points (Extra)
 7. **Timeliness**: Deduct 1 point for each day late, up to a maximum of 10 points deduction.
+
 
