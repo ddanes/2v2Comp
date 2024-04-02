@@ -1,8 +1,16 @@
 # 2 v 2 Competition Guidelines
 
-## Topic 
+## Overview
+Create an incident tracking application
 
-### Create an incident tracking application
+## Table of Contents
+- [2 v 2 Competition Guidelines](#2-v-2-competition-guidelines)
+  - [Overview](#overview)
+  - [Table of Contents](#table-of-contents)
+      - [Description](#description)
+    - [Requirements](#requirements)
+    - [Rules](#rules)
+    - [Point System](#point-system)
 
 #### Description
 Create an application that allows a company to create a new event for a cyber security incident. While it is up to said company to determine what warants an event, they need to be able to track whatever events they create. This includes collecting information and evidence about that event. Some information will be collected on creation of the event automatically and some needs to be able to be inputed by the company. 
