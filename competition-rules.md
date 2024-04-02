@@ -8,7 +8,7 @@ Create an incident tracking application
   - [Overview](#overview)
   - [Table of Contents](#table-of-contents)
       - [Description](#description)
-    - [Requirements](#requirements)
+    - [Requirements Overall](#requirements-overall)
     - [Rules](#rules)
     - [Point System](#point-system)
 
@@ -17,8 +17,7 @@ Create an application that allows a company to create a new event for a cyber se
 
 Once an event is created the company needs to be able to add status tags to the event for tracking purposes. Once an event is complete the item must be able to be marked complete, closed, and then logged for historical purposes.
 
-### Requirements
-overall
+### Requirements Overall
 - [] Allows for user managment
   - [] Users need to belong to a company
   - [] Create users
@@ -27,7 +26,7 @@ overall
   - [] manage user permissions
 - [] Allow users to create and manage incident `Events`
   - [] Create events
-  - [] delete an event
+  - [] Delete an event
   - [] Set Event status
   - [] Mark Events complete
   - [] Allow comments on the events
