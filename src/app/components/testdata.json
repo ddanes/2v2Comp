@@ -1,0 +1,35 @@
+[
+  {
+    "Id": 1,
+    "Name": "Event One",
+    "Status": {
+      "StatusID": 1,
+      "StatusName": "Open"
+    },
+    "Severity": "High",
+    "Comments": {
+      "CommentID": 1,
+      "EventID": 1,
+      "CommentText": "Needs further investigation.",
+      "CreatedByUserID": 1,
+      "CreationDateTime": "2024-04-15T09:00:00Z"
+    },
+    "Evidence": {
+      "Evidence": {
+        "EvidenceID": 1,
+        "EventID": 1,
+        "EvidenceType": "Image",
+        "EvidenceData": "URL_to_Image",
+        "Description": "Photo of the issue",
+        "UploadDateTime": "2023-02-15T09:39:00Z"
+      },
+      "IncidentInformation": {
+        "Title": "System Outage",
+        "Description": "Unexpected server shutdown",
+        "affectedItems": ["User123", "User456"],
+        "affectedUsers": ["User123", "User456"],
+        "incidentDateTime": "2024-04-15T09:00:00Z"
+      }
+    }
+  }
+]

@@ -11,52 +11,49 @@ import {
   IncidentInformation,
 } from "../types/types";
 
-const severity = ["High", "Medium", "Low"];
-const status = ["Open", "Closed"];
-
 const generateUser = (): User => ({
-  UserID: faker.string.uuid(),
+  UserID: faker.number.int(),
   Username: faker.internet.userName(),
   PasswordHash: faker.internet.password(),
   Email: faker.internet.email(),
-  CompanyID: faker.string.uuid(),
-  RoleID: faker.string.uuid(),
+  CompanyID: faker.number.int(),
+  RoleID: faker.number.int(),
 });
 
 const generateEventStatus = (): EventStatus => ({
-  StatusID: faker.string.uuid(),
-  StatusName: status,
+  StatusID: faker.number.int(),
+  StatusName: 
 });
 
 const generateComment = (): Comment => ({
-  CommentID: faker.string.uuid(),
-  EventID: faker.string.uuid(),
+  CommentID: faker.number.int(),
+  EventID: faker.number.int(),
   CommentText: faker.lorem.paragraph(),
-  CreatedByUserID: faker.string.uuid(),
+  CreatedByUserID: faker.number.int(),
   CreationDateTime: faker.date.past().toISOString(),
 });
 
 const generateCompany = (): Company => ({
-  CompanyID: faker.string.uuid(),
+  CompanyID: faker.number.int(),
   CompanyName: faker.company.name(),
   CompanyAddress: faker.location.streetAddress(),
   ContactInfo: faker.phone.number(),
 });
 
 const generateRole = (): Role => ({
-  RoleID: faker.string.uuid(),
+  RoleID: faker.number.int(),
   RoleName: faker.person.jobTitle(),
   Permissions: faker.lorem.words(),
 });
 
 const generateRiskTag = (): RiskTag => ({
-  RiskTagID: faker.string.uuid(),
+  RiskTagID: faker.number.int(),
   TagName: faker.lorem.word(),
 });
 
 const generateEvidence = (): Evidence => ({
-  EvidenceID: faker.string.uuid(),
-  EventID: faker.string.uuid(),
+  EvidenceID: faker.number.int(),
+  EventID: faker.number.int(),
   EvidenceType: faker.lorem.word(),
   EvidenceData: faker.lorem.words(),
   Description: faker.lorem.sentence(),
@@ -65,25 +62,21 @@ const generateEvidence = (): Evidence => ({
 
 const generateIncidentInformation = (): IncidentInformation => ({
   Title: faker.lorem.sentence(),
-  description: faker.lorem.paragraph(),
-  affectedItems: faker.company.buzzPhrase(),
-  affectedUsers: generateUser,
+  Description: faker.lorem.paragraph(),
+  affectedItems: faker.lorem.words(3),
+  affectedUsers: generateUser(),
+  incidentDateTime: faker.date.anytime(),
 });
 
 const generateFakeEvent = (): FakeEvent => ({
-  Id: faker.string.uuid(),
+  Id: faker.number.int(),
   Name: faker.lorem.sentence(),
   Status: generateEventStatus(),
-  Severity: severity,
+  Severity: "High",
   Comments: generateComment(),
   Evidence: {
     Evidence: generateEvidence(),
-    IncidentInformation: {
-      Title: faker.lorem.sentence(),
-      description: faker.lorem.paragraph(),
-      affectedItems: faker.company.buzzPhrase(),
-      affectedUsers: generateUser(),
-    },
+    IncidentInformation: generateIncidentInformation(),
   },
 });
 
